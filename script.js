@@ -62,7 +62,7 @@ function Heap() {
 			block = block.next;
 		};
 
-		spaceLeftover = blockBestFit.size - (process.size + memControlBlockSize); // Space leftover if block was divided
+		spaceLeftover = blockBestFit.size - (process.size); // Space leftover if block was divided
 
 		// Partition block if needed
 		if (spaceLeftover > 0) {
